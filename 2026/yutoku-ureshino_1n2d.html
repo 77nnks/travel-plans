@@ -33,6 +33,35 @@ p { margin: 6px 0; }
 ul { margin: 6px 0 0 18px; }
 li { margin-bottom: 6px; }
 
+details {
+  border-radius: 16px;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary-title::after {
+  content: "▼";
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+details[open] .summary-title::after {
+  content: "▲";
+}
+
 .badge {
   display: inline-block;
   padding: 6px 10px;
@@ -115,7 +144,11 @@ iframe {
 
 <!-- Day1 -->
 <section>
+    <details>
+    <summary>
 <h2>Day1｜1月25日（日）</h2>
+    </summary>
+
 
 <div class="timeblock">
 <h3>09:00｜熊本市東区 出発（車）</h3>
@@ -216,13 +249,16 @@ src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d53483.64057739567!2d1
     src="https://www.google.com/maps?q=豊玉姫神社+嬉野&output=embed">
   </iframe>
 </div>
-
+  </details>
 
 </section>
 
 <!-- Day2 -->
 <section>
+    <details>
+    <summary>
 <h2>Day2｜1月26日（月）</h2>
+    </summary>
 
 <div class="timeblock">
   <h3>07:00頃｜朝風呂・朝食</h3>
@@ -306,11 +342,14 @@ src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d53483.64057739567!2d1
 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d107181.34625019929!2d130.54672801827817!3d32.91357737083274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x35404ffbb2e57993%3A0x3f30ea01e14d8168!2z54aK5pys55yM6I2S5bC-5biC5pys5LqV5omL!3m2!1d32.992720399999996!2d130.47454589999998!4m5!1s0x3540f1406d129193%3A0x36bff73205f69a56!2z54aK5pys55yM54aK5pys5biC5p2x5Yy655-z5Y6f77yR5LiB55uu77yRIOODn-OCueOCv-ODvOODnuODg-OCr-OCueeGiuacrOOCpOODs-OCv-ODvOW6lyAxRiDjg5Djg7zjgqzjg7zjgq3jg7PjgrAg54aK5pys44Kk44Oz44K_44O85bqX!3m2!1d32.8384389!2d130.77751469999998!5e0!3m2!1sja!2sjp!4v1768030942744!5m2!1sja!2sjp" loading="lazy"></iframe>
 
 </div>
-
+  </details>
 </section>
 <!-- Spots -->
 <section>
+    <details>
+    <summary>
 <h2>近辺のおすすめスポット（寄り道候補）</h2>
+    </summary>
 <p class="note">「佐賀市中心街」→「祐徳稲荷神社」→「嬉野温泉」の流れに合わせて立ち寄りやすい場所（車移動想定）。</p>
 <h3>佐賀市中心街（寄り道候補）</h3>
 <div class="grid">
@@ -393,10 +432,14 @@ src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d53483.64057739567!2d1
 <li>嬉野は「温泉＋お茶」推しが強いエリアなので、時間があればチャオシル（お茶）</li>
 </ul>
 </div>
+  </details>
 </section>
 
 <section>
+    <details>
+    <summary>
   <h2>近辺のおすすめランチ・ディナースポット</h2>
+    </summary>
   <p class="note">
     「佐賀市中心街」→「祐徳稲荷神社」→「嬉野温泉」の移動動線に合わせて選定。
     観光途中でも使いやすい店を中心にしています。
@@ -530,6 +573,7 @@ src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d53483.64057739567!2d1
       </a>
     </div>
   </div>
+    </details>
 </section>
 
 <footer>
